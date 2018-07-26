@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="QuizApp.css">
+  <title>multiple-choice quiz form</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header role="instructions" aria-live="polite">
+    <h3>Multiplication Quiz</h3>
+    <div>
+      <span id="questionNumber"></span>
+    </div>
+
+    <div class="instructions">
+      Select one answer and hit submit question!
+    </div>
+  </header>
+  <main role="main" aria-live="assertive">
+    <form class="question w3-container w3-card-4">
+      <p></p>
+      <fieldset>
+
+      </fieldset>
+      <input class="submitAnswer" type="submit" value="Submit Answer">
+
+    </form>
+  </main>
+  <div id="feedback" role="feedback" aria-live="assertive">
+    Feedback
+
+    <h3 class="correctAnswer"></h3>
+    <h3 class="currentScore"></h3>
+    <h2></h2>
+
+    <button class="nextQuestion">Next Question</button>
+    <div>
+      <img class="correctImage hide" src="checkmark.png" alt="checkmark">
+      <img class="incorrectImage hide" src="xmark.png" alt="checkmark">
+    </div>
+  </div>
+  <div>
+    <button class="startQuiz">Start Quiz</button>
+  </div>
+</body>
+<script src="QuizApp.js"></script>
+
+</html>
